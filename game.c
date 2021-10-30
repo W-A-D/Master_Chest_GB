@@ -151,8 +151,6 @@ UBYTE getBehavior()
 		if(chestIndex == amountChestsLVL[lvl])
 		{
 			isExitLVL = cmpChests();
-			//test isExitLVL = 0;
-			//test new line;
 		}
 		
 	}
