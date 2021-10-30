@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"*.asm": "retroasm_z80",
+		"datavars.h": "c",
+		"stdio.h": "c",
+		"gb.h": "c"
+	}
+}
