@@ -43,7 +43,7 @@ void main()
 	SHOW_SPRITES;
 	SHOW_BKG;
 	DISPLAY_ON;
-	
+
 	while(1)
 	{
 		switch(joypad())
@@ -107,7 +107,6 @@ void main()
 
 void loadLevel()
 {
-	delay(DELAY_LOAD);
 	showLVL();
 	px -= 8;
 	move_sprite(0, px, py);
