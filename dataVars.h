@@ -1,4 +1,3 @@
-
 enum B {
 	BLANK,
 	BLOCK,   		
@@ -14,8 +13,6 @@ enum
 {
 	LEN_ARR = 6
 };
-
-
 
 UINT8 SPEED = 70;
 UINT16 DELAY_LOAD = 500;
