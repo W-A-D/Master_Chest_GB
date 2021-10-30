@@ -185,7 +185,7 @@ void showLVL()
 {
 	delay(400);
 	printf(" \n \n \n \n \n \n \n \n       level %u \n \n \n \n \n \n \n \n \n", lvl + 1);
-	delay(1200);
+	delay(400 * 3);
 }
 
 
