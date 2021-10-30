@@ -32,6 +32,7 @@ UINT8 mapElements[] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06};
 
 void main()
 {
+	showLVL();
 	set_bkg_data(0, 8, maptiles);
 	set_bkg_tiles(OFFSET_MAP, OFFSET_MAP, MAP_W, MAP_H, map[lvl]);
 
@@ -41,7 +42,7 @@ void main()
 	
 
 	//printf("Hello Test!\nTest next line");
-
+	
 	SHOW_SPRITES;
 	SHOW_BKG;
 	DISPLAY_ON;
@@ -165,10 +166,12 @@ UBYTE getBehavior()
 	if(checkCollBlock() && map[lvl][mapIndex] == EXIT_BUSH)
 	{
 		map[lvl][mapIndex] = BLOCK;	
-		printf("Level 2");
-		delay(400);
+		//printf("\n\n\n\n\n\nLevel 2");
 
 		lvl ++;
+		showLVL();
+		
+		
 		loadLevel();
 	}
 		
@@ -177,6 +180,14 @@ UBYTE getBehavior()
 
 	return 0;
 }
+
+void showLVL()
+{
+	delay(400);
+	printf(" \n \n \n \n \n \n \n \n       level %u \n \n \n \n \n \n \n \n \n", lvl + 1);
+	delay(1200);
+}
+
 
 UBYTE cmpChests()
 {

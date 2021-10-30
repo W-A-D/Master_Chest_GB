@@ -8,3 +8,4 @@ UBYTE cmpChests(void);
 void loadLevel(void);
 void resetVars(void);
 void clearArrChests(void);
+void showLVL(void);
