@@ -152,6 +152,7 @@ UBYTE getBehavior()
 		{
 			isExitLVL = cmpChests();
 			//test isExitLVL = 0;
+			//test new line;
 		}
 		
 	}
