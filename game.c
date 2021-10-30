@@ -40,15 +40,10 @@ void main()
 	set_sprite_data(0, 2, player);
 	set_sprite_tile(0, 0);
 	
-
-	//printf("Hello Test!\nTest next line");
-	
 	SHOW_SPRITES;
 	SHOW_BKG;
 	DISPLAY_ON;
-
-	//printf("x = %d ", px);
-
+	
 	while(1)
 	{
 		switch(joypad())
@@ -113,6 +108,7 @@ void main()
 void loadLevel()
 {
 	delay(DELAY_LOAD);
+	showLVL();
 	px -= 8;
 	move_sprite(0, px, py);
 
@@ -169,9 +165,6 @@ UBYTE getBehavior()
 		//printf("\n\n\n\n\n\nLevel 2");
 
 		lvl ++;
-		showLVL();
-		
-		
 		loadLevel();
 	}
 		
@@ -183,9 +176,9 @@ UBYTE getBehavior()
 
 void showLVL()
 {
-	delay(400);
+	delay(DELAY_LOAD);
 	printf(" \n \n \n \n \n \n \n \n       level %u \n \n \n \n \n \n \n \n \n", lvl + 1);
-	delay(400 * 3);
+	delay(DELAY_LOAD * 5);
 }
 
 
