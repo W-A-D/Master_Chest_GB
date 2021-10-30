@@ -13,7 +13,7 @@ enum B {
 
 enum 
 {
-	LEN_ARR = sizeof currArrayChest / sizeof currArrayChest[0]
+	LEN_ARR = 6
 };
 
 
