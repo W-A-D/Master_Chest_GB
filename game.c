@@ -136,7 +136,7 @@ UBYTE getBehavior()
 {
 	if(checkCollBlock() && map[lvl][mapIndex] == C_CHEST)
 	{
-		//test line
+		
 		map[lvl][mapIndex] = O_CHEST;
 		set_bkg_tiles(pCellX + OFFSET_MAP, pCellY + OFFSET_MAP , 1, 1, mapElements + O_CHEST);
 
