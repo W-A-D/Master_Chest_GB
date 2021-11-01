@@ -1,3 +1,6 @@
+#ifndef dataVars_h
+#define dataVars_h
+
 enum B {
 	BLANK,
 	BLOCK,   		
@@ -35,3 +38,5 @@ UINT8 pCellY;
 UINT8 mapIndex;
 
 char dir = 'R';
+
+#endif
